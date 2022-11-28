@@ -1,0 +1,801 @@
+// ........................................HOME..............................................//
+                      // ........................... VARIABLES..............................//
+                      $miniSE: 280px;
+                      $SE: 400px;
+                      $iphone: 550px;
+                      $mobile: 767px;
+                      $iPad: 900px;
+                      $iPadPro2: 1000px;
+                      $iPadPro: 1024px;
+                      $iPadProPlus: 1200px;
+                      $iPadProPlus2: 1400px;
+                    
+$bg-color:rgb(232, 51, 75);
+$color:white;
+
+                   // ..............................SCSS..........................//
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .header
+{
+    position: absolute;
+    z-index: 4;
+padding: 10px 0;
+cursor: pointer;
+margin: 0 110px;
+.lists{
+    display: flex;
+    opacity: 0.9;
+     a{
+         text-decoration: none;
+         color: $color; 
+         opacity: 0.9;
+     }  
+}
+li {
+color: $color;
+list-style: none;
+padding-right: 30px;
+cursor: pointer;
+}
+
+}
+
+.image
+{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    min-height: 70vh;
+.background
+{
+    position: absolute;
+    z-index: 10000;
+    background-color:$color;
+    width: 68%;
+    margin: 3% 15%;
+.text
+{
+    margin-left: 17%;
+}
+.fa-ribbon{
+    margin-left: -165px;
+    color: $bg-color;
+    top:10px
+}
+}
+.free{
+   background-color: $bg-color;
+   color: $color;
+   &:hover
+    { 
+        border: 1px solid rgb(232, 51, 75);
+        color: $color;
+        // background-color: white;
+        transition: 0.3s;
+    }
+}
+}
+.fa-clock
+{
+    color: $bg-color ;
+}
+.fa-analytics
+{
+    color: $bg-color ;
+}
+.fa-award
+{
+    color: $bg-color ;
+}
+.card
+{
+    width: 100%;
+margin: auto;
+    justify-content: space-between;
+}
+.button{
+    
+    border-radius: 100%;
+    position: relative;
+    top: 36px;
+    background-color: $color;
+    // border: 1px solid rgb(235, 46, 134);
+}
+.card{
+position: relative;
+}
+.card::after
+{
+    content: "";
+    height: 3px;
+    width: 0px;
+    background-color: rgb(235, 46, 134);
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease-in;
+}
+.card:hover:after
+{
+    width: 100%;
+}
+.abovecontent
+{
+    width: 100%;
+    margin: 6% auto 2% auto;
+    text-align: center;
+
+}
+h5{
+    color: $bg-color; 
+}
+span{
+    color: $bg-color; 
+}
+h1{
+    color: black;
+}
+.end
+{
+    text-align: center;
+    margin: 5% auto 4% auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    p{
+color: black;
+}
+a{
+    text-decoration: none;
+    color: $bg-color; 
+   
+    &:hover{
+        color: rgb(131, 27, 27);
+    }
+}
+}
+.maincontent
+{
+    position: absolute;
+    z-index: 1;
+    margin: 3% 0 0 15%;
+    width: fit-content;
+}
+.bar .fal
+{
+    color: $color;
+}
+.bar{
+color: $color;
+font-size: 1.6em;
+}
+.content1 h1{
+    color: $color;
+    font-size: 4.3em;
+}
+.content1 h5{
+    color: $color;
+    font-size: 1.4em;
+    // margin-bottom: -20%;
+    bottom: auto;
+}
+.button1
+{
+    background-color: $bg-color;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 6%;
+    font-weight: 500;
+    color: $color;
+
+    &:hover
+    {
+        
+        border: 1px solid rgb(232, 51, 75);
+        color: $bg-color;
+        background-color: $color;
+        transition: 0.3s;
+    }
+}
+.image{
+filter: brightness(30%);
+}
+
+.clock
+{
+    color: $color;
+}
+.bg-image {
+    width: 100%;
+    background-image: url(../img/3.png);
+    background-image: url(../img/3.png);
+    height: 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    // filter: brightness(30%);
+    #color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.6;
+    }
+}
+
+.content1{
+    padding: 100px 0;
+   
+}
+.container2{
+    // margin: auto;
+    width: 70%;
+    text-align: center;
+}
+.more-button
+{
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    color: $color;
+    padding: 0px 0px;
+    margin-left: 1%;
+    font-size: 0.89em;
+}
+.info
+{
+    position: absolute;
+    z-index: 1000;
+    margin-left: 1%;
+    
+}
+// ......................................NAVBAR..........................................//
+.navbar {
+  width: 70%;
+  margin: auto;
+  padding: 0;
+  z-index: 4;
+  .container1 {
+    padding: 5px 5px;
+    position: absolute;
+    top: 17px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.navbar {
+  .container11 {
+    padding: 5px 5px;
+    position: absolute;
+    top: 17px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.btn-nav {
+  background-color: $bg-color;
+  color: $color;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  transition: 0.4s ease-out;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $bg-color;
+    color: $bg-color;
+  }
+}
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    color: $bg-color;
+  }
+  .logo-content {
+    display: inline-block;
+    position: relative;
+    left: 1%;
+    bottom: 4px;
+    font-weight: 600;
+    font-size: 2.1rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(21, 29, 46);
+  }
+  .nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .after {
+    position: relative;
+    top: 0.11rem;
+    left: 2px;
+    opacity: 60%;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+  // ................................NAVBAR...........................................//
+
+  // ..................................ABOUT..........................................//
+
+.background-top{
+  width: 100%;
+
+  min-height: 40vh;
+  max-height: 70vh;
+  object-fit: cover;
+  filter: brightness(70%);  
+}
+.middle .background-second
+{
+    max-width: 100%;
+    width: 76%;
+    margin-left: 10%;
+}
+.side-text
+{
+h5{
+  color: $bg-color;
+}
+  p{
+    color:rgb(100, 96, 96);
+    font-weight: 700;
+  }
+  .parah
+  {
+    margin-left: 8%;
+  }
+}
+.title1
+{
+  color: black;
+  font-size: 2.4em;
+  span {
+    color: $bg-color;
+  }
+}
+.title2
+{
+  color: #000;
+  margin-left: 2%;
+}
+.second-section
+{
+  top:70px;
+}
+.img-content {
+ 
+margin: auto;
+width: 200px;  
+h1{
+  position: absolute;
+  color: $color;
+  top:300px;
+  z-index: 1;
+  text-transform: uppercase;
+}
+}
+.background-third
+{
+  width: 100%;
+ 
+  object-fit: cover;
+  max-height: 164vh;
+    margin-left: -4%;
+}
+.container3{
+  img{
+    // margin-top:159px;
+    width: 104%;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(70%);
+  }
+}
+.fa-clock
+{
+  color: $bg-color;
+}
+.fa-award {
+    color: $bg-color;
+  }
+  .btn-side {
+    background-color: $bg-color;
+    color: $color;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top:3%;
+    font-weight: 600;
+    transition: 0.4s ease-out;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $bg-color;
+      color: $bg-color;
+    }
+  }
+
+  .container2 {
+    img {
+      margin-left: 8%;
+    }
+  }
+  .bottom-content{
+    text-align: center;
+    width: fit-content;
+    height: 0;
+    margin:auto;
+    position: relative;
+    top: 150px;
+    // vertical-align: auto;
+    color: $color;
+    z-index: 1;
+    i{
+      margin-right: 5px;
+    }
+    h1{
+      margin:auto;
+      color: $color;
+      span{
+        font-weight: 300;
+        color: $color;
+      }
+    }
+    h5{
+      font-family: "Roboto", sans-serif;
+      color: $color;
+      
+    }
+  }
+// .....................................CONTACT................................        
+.contact-wrap{
+  background-color: white;
+ width: 100%;
+}
+.submit
+{
+  margin-left: 35%;
+}
+.btn-submit{
+  background-color: rgb(229,32,48);
+  border-radius: 20px 20px;
+}
+
+.info-wrap{
+  background-color: rgb(20,29,60);
+  color: white;
+  h3{
+      font-size: 1.3rem;
+      font-family:sans-serif;
+     
+  }
+}
+.row
+{
+  display: flex;
+  // flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  
+}
+.align-items-stretch {
+  padding-left: 0;
+
+}
+.box{
+  width: 100%;
+  display: flex;
+  align-items:start;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i{
+      color: $bg-color;
+      }
+      a{
+          color: white;
+          text-decoration: none;
+          margin-left: 18px;
+      }
+}
+.text{
+  h2{
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h4{
+  color: $bg-color;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 108px;
+}
+}
+
+.wrapper
+{
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+ box-shadow: 1px 1px solid black;
+ border-radius: 20px 20px;
+}
+
+.bottom{
+  margin-top: 100px;
+  i{
+    padding: 5px 10px 5px 0px;
+}
+}
+
+// ......................................FOOTER.......................................//
+
+footer{
+  a{
+    text-decoration: none;
+     color: white;
+     &:hover{
+       color: white;
+     }
+  }
+}
+           // .............................MEDIA..........................//
+           @media (min-width:$iphone) and (max-width:$mobile)
+           {
+               .content1 h1 {
+                  
+                   font-size: 2em;
+               }
+               .button1{
+                   padding: 2px 4px;
+                   margin-top: -1%;
+                   }
+                   .image
+               {
+                   width: 100%;
+               }
+           
+               .text1
+               {
+                   margin:auto;
+                  
+               margin-top: -2%;
+               width: 100%;
+               margin-left: 75%;
+               }
+               .clock{
+           margin-left: -78%;
+           color: #000;
+               }
+           
+           
+           .header{
+               display: none;
+           }
+           .text5 a {
+               text-decoration: none;
+               color: #000;
+               &:hover
+               {
+                   color: $bg-color;
+               }
+           }
+           .text6 a {
+               text-decoration: none;
+               color: #000;
+               &:hover
+               {
+                   color: $bg-color;
+               }
+           }
+           .content1 h5
+           {
+               font-size: 1.3em;
+           }
+           .bg-image{
+               margin-top: -9%;
+           }
+           
+           
+           }
+           
+           @media(max-width:800px)
+           {
+               .content1
+               {
+                   margin-top: 27%;
+               }
+               .image
+               {
+                   width: 100%;
+               }
+               
+           }
+
+           @media (max-width:$mobile)
+           {
+             .content1{
+               padding: 90px 0;
+           }
+       }
+           @media (max-width: $iphone) {
+            .navbar {
+              width: 100%;
+              .container1 {
+                width: 100%;
+                padding: 0px 0px 0px 0px;
+            //     padding-top: 18px;
+                // top: 38;
+              }
+            }
+          }
+          @media (min-width: $iPadProPlus2) {
+            .navbar-nav {
+              position: absolute;
+              right: 20px;
+              z-index: 200;
+            }
+          }
+          @media (max-width: $iPadProPlus2) {
+            .btn-nav {
+              margin-left: 0;
+            }
+            h3
+            {
+             margin-left: 0%;
+             margin-top: 10%;
+             font-size: 2em;
+            }
+            
+          }
+         
+          @media(min-width:$SE) and (max-width: $iphone) 
+          {
+            .side-text
+            {
+            
+            h5{
+              color: $bg-color;
+            }
+            p{
+              font-size: 0.8em;
+            }
+            }
+            .container3 img {
+              margin-top: 55px;
+            }
+           
+            .img-content h1 {
+            
+              top: 170px;
+            }
+            .btn-side
+            {
+              margin-left: 7%;
+              margin-top: -4px;
+            }
+            .title1
+            {
+              font-size: 1.8em;
+            }
+            .title2
+            {
+              margin-top: -9px;
+              font-size: 2em;
+            }
+          
+          .bottom-content{
+            h5{
+              font-size: 1rem;
+              margin-left: 0%;
+            }
+            h1{
+              font-size: 1.4rem;
+              margin-left: -27%;
+            }
+          }
+          @media (min-width:$SE)
+          {
+              .abovecontent h1
+              {
+                  font-size: 1.5em;
+                  text-align: center;
+                  margin-left: 4%;
+              }
+              .image
+              {
+                  width: 100%;
+              }
+              
+             
+              .content1
+              {
+                  margin-top: 5%;
+              }
+             
+              .button1{
+              padding: 9px 11px;
+              margin-top: 2%;
+              } 
+          }
+          }
+        @media (min-width:$iPadPro) and (max-width:$iPadProPlus){
+          .background-second
+              {
+                height: 38vh;
+                margin-left: -158%;
+                min-width: 50%;
+              }
+              .middle .background-second {
+            margin-top: 4%;
+                margin-left: 3%;   
+          }
+        }
+        
+        @media (max-width: $SE) {
+          .navbar {
+            width: 100%;
+            .container1 {
+              width: 100%;
+              top: 14px;
+            }
+          }
+          .container1, .container2{
+            width: 100%;
+        }
+        .bottom-content{
+          top:50px;
+          h1{
+            font-size: 1.3rem;
+          
+            
+          }
+          h5{
+            font-size: 0.9rem;
+          }
+        }
+        .img-content{
+          h1{
+            top:160px;
+          }
+        }
+        }
+        @media(min-width:$miniSE) and (max-width:$SE)
+        {
+            .submit
+            {
+                margin-left: 25%;
+            }
+        }
+        @media(min-width:$SE) and (max-width:$iphone)
+        {
+            .submit
+            {
+                margin-left: 30%;
+            }
+        }
+        
+        @media (max-width: $iphone) {
+          .navbar {
+            width: 100%;
+            .container11 {
+              width: 100%;
+              padding: 3px 0px 0px 0px;
+          
+            }
+          }
+        }
+
+        
